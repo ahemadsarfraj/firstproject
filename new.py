@@ -104,8 +104,36 @@
 #     print(fname + "", iname)
 
 # my_function("sarfraj", "ansari")
-def my_function(name  = "sarfraj"):
-    print("my name is", name)
+# def my_function(name  = "sarfraj"):
+#     print("my name is", name)
 
-my_function("email")
-my_function()
+# my_function("email")
+# my_function()
+# def my_function(name , animal):
+#     print(" i have a" , animal)
+#     print("my", animal + "s name is", name)
+
+# my_function("gasper" , "dog")
+# def my_function(name , age , animal):
+#     print("i hvea a" , age, "year old", animal , "named", name)
+    
+# my_function("dog" , 5, "gasper") 
+# def my_function(fruits):
+#   for fruit in fruits:
+#     print(fruit, end=" ")  
+
+# my_fruits=["apple", 'bsna']
+# # my_function(my_fruits)
+# def my_function(a , b):
+#     return a + b
+    
+# sum = my_function(4, 5)    
+# print(sum)
+# sum = my_function(7, 5)    
+# print(sum)
+def my_function(a , b):
+  return a*b
+
+x = int(input("enter first number:"))
+y = int(input("enter secound number:"))
+print(my_function(x , y))
