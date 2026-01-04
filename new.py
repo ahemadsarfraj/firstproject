@@ -131,9 +131,32 @@
 # print(sum)
 # sum = my_function(7, 5)    
 # print(sum)
-def my_function(a , b):
-  return a*b
+# def my_function(a , b):
+#   return a*b
 
-x = int(input("enter first number:"))
-y = int(input("enter secound number:"))
-print(my_function(x , y))
+# x = int(input("enter first number:"))
+# y = int(input("enter secound number:"))
+# print(my_function(x , y))
+# def remove_duplicates(list):
+#     seen =set ()
+#     result =[]
+#     for item in list:
+#       if item not in seen:
+#         result.append(item)
+#         seen.add(item)
+#     return result
+# print(remove_duplicates([1, 2 , 2 , 3 , 4 , 5 , 5 , 6 ]))
+# print(remove_duplicates([1,1,2,3,4,5,5,5,6,6,7,7]))      
+
+def remove_duplicates(list):
+    seen = set()
+    result = []
+    for item in list:
+        if item not in seen:
+            result.append(item)
+            seen.add(item)
+
+    return result
+user_input = input("inter the numbers:")
+print(remove_duplicates(user_input))    
+number = list(map(int, user_input.split(",")))
