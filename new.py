@@ -148,15 +148,17 @@
 # print(remove_duplicates([1, 2 , 2 , 3 , 4 , 5 , 5 , 6 ]))
 # print(remove_duplicates([1,1,2,3,4,5,5,5,6,6,7,7]))      
 
-def remove_duplicates(list):
+def remove_duplicates(numbers):
     seen = set()
     result = []
-    for item in list:
+    for item in numbers:
         if item not in seen:
             result.append(item)
             seen.add(item)
 
     return result
 user_input = input("inter the numbers:")
-print(remove_duplicates(user_input))    
 number = list(map(int, user_input.split(",")))
+print(remove_duplicates(number))    
+
+   
